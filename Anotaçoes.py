@@ -1,4 +1,4 @@
-# para agregar cadas decimais utilize: "%.3f", no numero de casas decimais vem antes do 'f'
+# para agregar cadas decimais utilize: "%.3f" % , o numero de casas decimais vem antes do 'f' como no exemplo: ("A Divisão dos Números é %.2f:" %div)
 #Dispositivos de entrada: Input,o Input recebe valores como String, caso digite alguma numero converta antes do dispositivo de entrada 
 #Para receber valores como inteiros ou floats, utilize como no exemplo: int(input(" informe o primeiro valor"))
 """
