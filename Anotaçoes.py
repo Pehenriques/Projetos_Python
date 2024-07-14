@@ -50,3 +50,22 @@ IF < Condição > :
         <Comando>      
 
 """
+
+"""
+
+    Estrutura de Repetição 
+    
+    FOR -> (Para)
+    IN -> (EM)
+    : -> (então)
+    
+    FOR < Variavel > IN < Lista_de_Valores > :
+    < Sequência_de_comandos >
+    
+    WHILE -> (ENQUANTO) 
+    : -> (então)
+    
+    WHILE < Expressão-lógica >:
+    < Sequencia_de_comandos >
+
+"""

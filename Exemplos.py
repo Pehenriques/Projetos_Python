@@ -27,3 +27,28 @@ elif nota >=4 and nota < 6:
     print("Aluno de Recuperação")
 else :
     print("Aluno reprovado")
+    
+#Repete de 0 até 9
+for contador in range(10):
+    print(contador)
+    
+#Repete de 1 até 10
+for contador in range(1,11):
+    print(contador)
+
+#Repete de 10 até 1 ( O -1 é o passo )
+for contador in range(10, 0, -1):
+    print(contador)
+    
+#Mostra lista de frutas 
+for contador in ("Banana", "Maçã", "Morango"):
+    print(contador)
+else:
+    print("laço chegou ao fim")
+    
+
+contador = 1 
+
+while contador <= 10:
+    print(contador)
+    contador = contador +1
