@@ -15,3 +15,38 @@ Math,pow(2,3) 2 elevado a 3
 Math.sin (45) retorna o Seno
 
 """
+#Operadores Aritméticos
+# Divisão inteira //
+# Exponenciação **
+# Resto da Divisão (mod) %
+
+#Funções Prontas
+#Float (x) -> Converte o valor x para float
+#int(x)-> Converte o valor de x para inteiro
+#str(x)-> Converte o valot de x para string
+#Print(x)-> imprime os dados da tela
+# x = input() -> recebe dados do teclado 
+
+"""
+    Estruturas Condicionais
+    
+    IF -> (se)
+    : -> (então)
+    ELSE -> (se não)
+    ELIF-> (se não se)
+    
+    IF < Condição > :  
+         <Comando>
+    ELSE:
+        <Comando>     
+        
+   caso tenha mais de uma condição      
+
+IF < Condição > :  
+         <Comando>
+    ELIF:
+        <Comando> 
+    ELSE:
+        <Comando>      
+
+"""

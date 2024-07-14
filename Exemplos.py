@@ -17,3 +17,13 @@ y =  input(" Informe o segundo numero:")
 soma = float(x) + float(y)
 
 print(" a Soma dos números é:", soma)
+
+
+nota = float(input("Digite sua nota:"))
+
+if nota >= 6.0:
+    print(" Aluno aprovado")
+elif nota >=4 and nota < 6:
+    print("Aluno de Recuperação")
+else :
+    print("Aluno reprovado")
