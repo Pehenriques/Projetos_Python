@@ -52,3 +52,25 @@ contador = 1
 while contador <= 10:
     print(contador)
     contador = contador +1
+    
+#Importa uma Biblioteca
+import numpy as np 
+
+#Cria um Vetor
+vetor = np.array([1,1.5,2,2.5])
+print(vetor)
+
+#Cria uma matriz
+matriz = np.array([ [1, 2, 3], [3, 2, 1]])
+print(matriz)
+
+#Exemplos de Listas 
+
+lista = []
+print(lista)
+
+lista = ['O carro', ' peixe', 123, 111]
+print(lista)
+
+nova_lista = [ 'pedra', lista]
+print(nova_lista) 

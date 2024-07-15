@@ -174,5 +174,51 @@ elif Valor == 11:
     print("November")
 elif Valor == 12:
     print("December")
+
+#Ex
+#Desenvolva um programa que mostre todos os numeros de 1 à 100 de For para While
+for contador in range(1,101):
+    print(contador)
+
+#Em While
+contador = 1
+
+while contador <= 100:
+    print(contador)
+    contador = contador +1
+
+#Ex
+#Faça um programa que leia valores numéricos ate que um zero seja lido e mostre a quantidade de números lidos
+quantidade = 0
+
+numero = int(input("Informe um número"))
+
+while numero !=0:
+    quantidade = quantidade + 1
+    numero = int(input("Informe um número"))
     
+print("A quantidade de números digitados é:", quantidade)
+
+#Ex
+#Desenvolva um programa que mostre todos os números de 20 até 1 em FOR
+for contador in range(20, 0, -1):
+    print(contador)
     
+#Ex
+#Faça um programa que lê um conjunto de valores até que um zero seja lido. Determine e imprime a soma dos valores lidos
+soma = 0
+
+numero = int(input("Informe um número"))
+
+while numero !=0:
+    soma = soma + numero #A variavel Soma recebe o numero digitado, quarda ele e soma com o proximo numero
+    numero = int(input("Informe um número"))
+
+print("A soma dos números digitados é:", soma)
+
+#Varendo uma lista
+
+lista = ["maçã", "banana", "morango", "uva"]
+
+for fruta in lista:
+    print(fruta)

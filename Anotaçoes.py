@@ -14,6 +14,9 @@ Math.pi Constante de PI
 Math,pow(2,3) 2 elevado a 3
 Math.sin (45) retorna o Seno
 
+Import Numpy as np ( "as" e para averbrimarmos o nome )
+Numpy e uma biblioteca
+
 """
 #Operadores Aritméticos
 # Divisão inteira //
@@ -68,4 +71,33 @@ IF < Condição > :
     WHILE < Expressão-lógica >:
     < Sequencia_de_comandos >
 
+"""
+
+"""
+    
+    Sobre Arrays, lista, Tupla ...
+    
+    Para toda lista utilize []
+    
+    Funções de lista
+    lista.append = Adiciona um item a lista
+    lista.remove = Remove um item da lista 
+    del lista [x] = Remove um item da posição x da lista
+    lista.sort() = Ordena a Lista
+    lista.reverse() = Inverte a lista
+    enumerate = Retorna a posição e o item da posição conforma no exemplo
+    
+    lista =  ["maça", "banana", "morango", "uva"]
+    
+    for i, fruta in enumerate(lista):
+        print("Posição:", i, " - Fruta:", fruta)
+    
+    sum(lista) = Soma os elementos da lista 
+    len(lista) = Quantidade de elementos da lista 
+    max(lista) = Maior elemento da lista
+    min(lista) = Menor elemento da lista 
+    lista.count(x) = Retorna quantas vezes o elemento x aparece na lista
+    extend(listax) = Acrescenta os elementos da listax na lista original
+    
+    
 """
