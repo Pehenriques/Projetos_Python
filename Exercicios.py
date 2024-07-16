@@ -301,9 +301,11 @@ quant = len(notas)
 soma = sum(notas)
 media = soma/quant
 
+# Exibe as notas na ordem em que foram informadas
 print("As notas informadas são;")
 for nota in notas:
     print("%.2f:" %nota)
     
+print("A quantidade de notas informadas é", quant)   
 print("A soma das notas são %.2f:" %soma)
 print("A soma das notas são %.2f:" %media)
