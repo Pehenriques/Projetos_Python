@@ -278,3 +278,32 @@ menor = min(idades)
 
 print("A maior idade é", maior," e o menor é", menor)
 
+#Ex
+"""
+   Faça um programa que leia um número indeterminado de notas até digitaar um número negativo. Após esta entrada de dados, faça o seguinte :
+   - Mostre a quantidade de notas que foram lidas.
+   - Exiba todas as nostas da ordem em que foram informadas uma abaixo do outra.
+   - Calcule e mostre a soma das notas.
+   - Calcule e mostre a média das notas.
+   - Calcule e mostre a quantidade de notas acima da média calculada. 
+"""
+
+notas = []
+
+quant_notas = int(input("Quantas notas você deseja inserir? "))
+
+for i in range(quant_notas):
+   nota = float(input("Digite uma nota : "))
+   notas.append(nota)
+   notas.sort()
+   
+quant = len(notas)
+soma = sum(notas)
+media = soma/quant
+
+print("As notas informadas são;")
+for nota in notas:
+    print("%.2f:" %nota)
+    
+print("A soma das notas são %.2f:" %soma)
+print("A soma das notas são %.2f:" %media)
