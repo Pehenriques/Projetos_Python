@@ -75,7 +75,7 @@ IF < Condição > :
 
 """
     
-    Sobre Arrays, lista, Tupla ...
+    Sobre Arrays, lista, Tupla, Conjunto, Dicionário, 
     
     Para toda lista utilize []
     
@@ -98,6 +98,41 @@ IF < Condição > :
     min(lista) = Menor elemento da lista 
     lista.count(x) = Retorna quantas vezes o elemento x aparece na lista
     extend(listax) = Acrescenta os elementos da listax na lista original
+    
+   Tupla (),  é uma coleção de objstos python separados por Vírgulas. 
+   Objetos aninhados e repetição, mas uma tupla e Imutavel, ao contrario de lista que são mutaveis
+   Tuplas são imutaveis e tem menos funcionalidades.
+   
+    Conversão de Tuplas e listas
+    
+    litsa = [1,2,3,4,5]
+    Converte para Tupla
+    tupla = tuple(lista)
+        print (tupla)
+    Converte para lista   
+    Nova_lista = list(tupla)
+        print(nova_lista)
+    
+    Conjunto {}
+    O conjunto e um tipo de dados sem elementos duplicados
+    Usado para encontrar elementos únicos
+    Usado para unir operações
+    
+    Dicionário 
+    Em python e uma Coleção não ordenada de valores de dados
+    É uma lista que podemos acessar seus elementos atraves de strings.
+    Ex:
+    Keys       Valeus 
+    'a' ->     'alpha'
+    'o' ->     'omega'
+    'g' ->     'gamma'
+    dict
+    
+    Dicionário contém Chave :  par de Valor.
+    O valor da chave é fprnecido no dicionário para torná-lo mais otimizado.
+    Ex :
+    dict_estados = {"MG":"Minas Gerais","SP" : "São Paulo" }
+        print(dict_estados["MG"])
     
     
 """

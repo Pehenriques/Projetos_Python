@@ -222,3 +222,59 @@ lista = ["maçã", "banana", "morango", "uva"]
 
 for fruta in lista:
     print(fruta)
+    
+#Ex
+# Ler uma lista de 5 números inteiros e mostre cada número juntamente com a sua posição na lista.
+
+#ler uma lista de 5 números 
+i = 0
+lista = []
+
+for i in range(5):
+    lista.append(input("Informe um número:"))
+    
+#mostra número e posição na lista
+for posicao, elemento in enumerate(lista):
+    print("Posição:", posicao,"Número:", elemento)
+
+#Ex
+#ler uma lista de 10 números reais e mostre os na ordem inversa.
+
+#ler uma lista de 10 números 
+i = 0
+lista = []
+
+for i in range(10):
+    lista.append(input("Informe um número:"))
+#inverte a ordem digitada
+lista.reverse()
+print("A ordem inversa da digitada é:", lista)
+
+#Ex
+#ler uma lista com 4 notas, em seguida o progroma deve exibir as notas e a media
+
+notas = []
+
+for i in range(4):
+    nota = int(input("Digite uma nota : "))
+    notas.append(nota)
+quant = len(notas)
+total = sum(notas)
+media = total/len(notas)
+
+print("As notas são:", notas)
+print("A media das notas é", media)
+
+#Ex
+#Ler um vetor com 20 idades e exibir a maior e menor
+
+idades = []
+
+for i in range(20):
+    idade = int(input("Digite uma idade : "))
+    idades.append(idade)
+maior = max(idades)
+menor = min(idades)
+
+print("A maior idade é", maior," e o menor é", menor)
+

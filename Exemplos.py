@@ -74,3 +74,15 @@ print(lista)
 
 nova_lista = [ 'pedra', lista]
 print(nova_lista) 
+
+#Criando um Dicionário
+d = {}
+d["João"] = 25
+d["José"] = 15
+d["Maria"] = 21
+print(d)
+
+#Função dict
+novo_d = dict(a = 10, b = 20, c = 30)
+print(novo_d)
+print(novo_d["a"])
