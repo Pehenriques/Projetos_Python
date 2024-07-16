@@ -282,7 +282,7 @@ print("A maior idade é", maior," e o menor é", menor)
 """
    Faça um programa que leia um número indeterminado de notas até digitaar um número negativo. Após esta entrada de dados, faça o seguinte :
    - Mostre a quantidade de notas que foram lidas.
-   - Exiba todas as nostas da ordem em que foram informadas uma abaixo do outra.
+   - Exiba todas as notas da ordem em que foram informadas uma abaixo do outra.
    - Calcule e mostre a soma das notas.
    - Calcule e mostre a média das notas.
    - Calcule e mostre a quantidade de notas acima da média calculada. 
