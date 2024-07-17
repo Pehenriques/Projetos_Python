@@ -86,3 +86,47 @@ print(d)
 novo_d = dict(a = 10, b = 20, c = 30)
 print(novo_d)
 print(novo_d["a"])
+
+#Exemplo de criação de função
+def fun_soma(a,b):
+     return a + b
+ 
+numero1= int(input("informe o primeiro número"))
+numero2= int(input("informe o segundo número"))
+
+soma = fun_soma(numero1,numero2)
+
+print(" o resultado da soma é:", soma)
+
+#exemplo de f(X) = x2
+def f(x):
+    return x*x
+
+print(f(2))
+
+#Exemplo
+#Função para calculo de horas extras
+
+def calculo_pagamento(quant_horas, valor_hora):
+    horas = float(quant_horas)
+    taxa = float(valor_hora)
+    
+    if horas <= 40:
+        salario = horas*taxa
+    else:
+        h_exced = horas - 40
+        salario = 40*taxa +(h_exced*(1.5*taxa))
+    
+    return salario
+    
+horas = int(input("informe as horas trabalhadas"))
+taxa = int(input("informe o valor da hora trabalhada"))
+total_salario = calculo_pagamento(horas,taxa)
+print("O salario deste funcionario é", total_salario)
+
+#Exemplo de função sem retorno
+def hello(nome):
+    print("Olá",nome)
+    
+n = input("Qual é o nome ?")
+hello(n)

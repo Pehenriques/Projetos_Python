@@ -133,6 +133,5 @@ IF < Condição > :
     Ex :
     dict_estados = {"MG":"Minas Gerais","SP" : "São Paulo" }
         print(dict_estados["MG"])
-    
-    
+
 """
