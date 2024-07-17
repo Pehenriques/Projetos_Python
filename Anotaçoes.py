@@ -135,3 +135,18 @@ IF < Condição > :
         print(dict_estados["MG"])
 
 """
+"""
+
+    Criando uma função
+    forma geral:
+
+        def nome_função( < lista de parâmetros > ):
+                    corpo da função
+        return expressão
+        
+    Forma Geral Procedimento
+    
+       def nome_função( < lista de parâmetros > ):
+                    corpo da função
+        
+"""
