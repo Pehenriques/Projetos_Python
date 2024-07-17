@@ -72,7 +72,7 @@ SalarioN = (salarioM*0.25) + salarioM
 
 print("O salario atual com o reajuste é de:", SalarioN)
 
-#Ex6
+#Ex7
 #Faça um algoritmo que dado um número inteiro, verifique e mostre se ele é par ou ímpar
 
 numero =  int(input("informe um número:"))
@@ -82,7 +82,7 @@ if numero % 2 == 0 :
 else :
     print("O número é impar")
     
-#Ex7
+#Ex8
 #Faça um algoritmo que dado um número, verifique e mostre se o número é positivo ou negativo.
 
 numero = int(input("informe um número:"))
@@ -94,7 +94,7 @@ elif numero == 0:
 else :
     print(" Negativo")
 
-#Ex8
+#Ex9
 #Faça um algoritmo que receba duas idades e mostre a idade da pessoa mais nova 
 
 idade1 = int(input("informe a primeira idade:"))
@@ -107,7 +107,7 @@ elif idade2 < idade1:
 elif idade1 == idade2:
     print("As duas pessoas tem a mesma idade")
     
-#Ex9
+#Ex10
 #Faça um algoritmo que receba a idades e o nome de duas pessoase mostre a idade da pessoa mais velho 
     
 idade1 = int(input("informe a idade da primeira pessoa:"))
