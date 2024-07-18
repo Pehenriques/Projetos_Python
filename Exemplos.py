@@ -130,3 +130,16 @@ def hello(nome):
     
 n = input("Qual é o nome ?")
 hello(n)
+
+#Exemplo simples do exercício abaixo 
+#Faça um programa Pythom contendo uma função que retorne True se número digitado for par ou Falso se o número for impar.
+
+def eh_par(numero):
+    return numero % 2 == 0
+
+numero = int(input("Digite um número: "))
+
+if eh_par(numero):
+    print("O número é par.")
+else:
+    print("O número é ímpar.")

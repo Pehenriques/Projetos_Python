@@ -150,3 +150,70 @@ IF < Condição > :
                     corpo da função
         
 """
+"""
+
+ POO em Python
+ 
+  Irei colocar comente algumas definições somente para não me perde, e tambem ajudar nos estudos e na pesquisa.
+  
+  
+  Classe
+   dentro da Classe nos temos:
+   Nome da classe
+   Atributos 
+   Métodos
+   
+   Exemplo:
+   
+   Classe Conta:
+        numero = 000000
+        saldo = 0.0 
+        
+O nome da Classe sempre começando com a letra maiúscula  
+
+
+    Estrutura, Atributos 
+    criando um objeto
+      
+    Variavél = Classe ()
+
+    Exemplo:
+    
+    conta = Conta() 
+    conta.saldo = 20   #Para acessar os atibutos daquele objeto usamos o " . " igual no exemplo
+    conta.numero = "13131 - 2"
+    print(conta.saldo)
+    print(conta.numero)
+    
+    no final um exemplo ficaria assim
+    class Conta:
+        numero = 0000
+        saldo = 0.0
+     
+    Conta = Conta()
+    Conta.numero = 12345
+    Conta.saldo = 1000.0
+    print("Número da conta",Conta.saldo)
+    print("Saldo da conta",Conta.numero)
+    
+    Esturtura, Métodos 
+    
+    def nome_do_metodo(self, parametros)
+    # o parâmetro self é obrigatorio quando voce cria métodos dentro da classe 
+    
+    Exemplo?
+    
+    class Conta:
+        numero = "00000 - 0"
+        saldo = 0.0
+        
+    def deposito( self, valor):
+        self.saldo += valor
+        
+    def saque(self, valor):
+        if(self.saldo > 0):
+           self.saldo -= valor
+        else:
+        print("saldo insuficente")
+
+"""

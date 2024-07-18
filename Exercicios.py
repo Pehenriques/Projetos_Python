@@ -1,3 +1,4 @@
+import math
 #Programa para calcular Dados Numericos 
 #Ex1
 
@@ -309,3 +310,76 @@ for nota in notas:
 print("A quantidade de notas informadas é", quant)   
 print("A soma das notas são %.2f:" %soma)
 print("A soma das notas são %.2f:" %media)
+
+#Ex
+#Faça uma função que informe a quantidade de dígitos de um determinado número inteiro informado.
+def fun_quant_digitos(numero):
+    texto = str(numero)
+    return len(texto)
+
+#entrada de dados 
+n = int(input(" Informe um número:"))
+#chamada da função 
+cont =  fun_quant_digitos(n)
+#mostra resultado
+print("Aquantidade de digitos é",cont)
+
+#Ex
+#Escreva  uma função que retorne o menor entre dois números
+def fun_return_M(numeros):
+    return numeros
+
+numero1 = int(input("Informe o primeiro número"))
+numero2 = int(input("Informe o segundo número"))
+
+#chamada da função 
+n1 = fun_return_M(numero1)
+n2 = fun_return_M(numero2) 
+
+#mostra resultado
+if numero1 > numero2:
+    print("O numero menor é ", n2)
+elif numero2 > numero1:
+    print("O numero menor é ", n1)
+else:
+    print(" Os numeros são iguais")
+    
+#Ex
+#Crie uma função que recebe por parâmetro o raio de uma esfera e calcule o seu volume (v= 4/3*pi*(raio*3))
+def calcula_volume_esfera(raio):
+    # Fórmula do volume da esfera: V = (4/3) * pi * raio^3
+    volume = (4/3) * math.pi * (raio**3)
+    return volume
+
+
+raio = 3
+volume = calcula_volume_esfera(raio)
+
+print("O volume da esfera é:",volume)
+
+#Ex
+#Faça um programa Pythom contendo uma função que retorne True se número digitado for par ou Falso se o número for impar.
+
+def fun_par_impar(par, impar):
+    return par,impar
+
+numero = int(input(" digite um numero"))
+
+par= fun_par_impar(True, False)[0]
+impar = fun_par_impar(True, False)[1]
+
+if numero % 2 == 0:
+    print(par)
+else:
+    print(impar)
+    
+#Ex
+#Faça um procedimento que lê 5 valores  interios e mostre a soma desses números.
+def proc ():
+    soma = 0
+    for i in range(5):
+        x = int(input("Informe um número"))
+        soma = soma + x
+        print(" A soma é", soma)
+        
+proc ()
