@@ -383,3 +383,75 @@ def proc ():
         print(" A soma é", soma)
         
 proc ()
+
+#Ex
+#Classe Retangulo: crie uma classe que modele um retângulo.Teste o programa.
+# - Atributos: base e altura
+# - Métodos: calcular área e calcular perímetro. 
+
+class Retangulo():
+    base = 0
+    altura = 0
+    
+def calcularArea(self):
+    return self.base * self.altura
+
+def calcularPerimetro(self):
+    return 2 * self.base + 2 * self.altura
+
+Retangulo = Retangulo()
+Retangulo.base = 2
+Retangulo.altura = 4
+print("A área do é %.2f" %Retangulo.calcularArea())
+print("O perimentro e %.2f" %Retangulo.calcularPerimetro())
+
+#Ex 
+"""
+Classe Pessoa: crie uma Classeque modele uma Pessoa:
+ - Atributos: nome, idade, peso e altura 
+ - Métodos: envelhecer, engordar, emagrecer, crescer.
+
+Obs: por padrão, a cada ano que a nossa pessoa envelhece, sendo a idade dela menor que 21 anos, ela deve crescer 0,5 cm
+Teste o programa
+"""
+
+class Pessoa:
+    nome = ''
+    idade = 0
+    peso = 0.0
+    altura = 0.0
+    
+def envelhecer(self):
+    if self.idade <= 21:
+        self.altura = self.altura + 0.5
+    self.idade= self.idade + 1
+    return self.idade
+    
+def crescer(self):
+    if self.idade <= 21:
+        self.altura = self.altura + 0.5
+    else:
+        return self.altura
+        
+def engordar(self,peso):
+    self.peso += peso 
+    return self.peso
+    
+def emagrecer(self, peso):
+    self.peso -= peso
+    
+nome = input("Digite seu nome")
+idade = int(input("Digite sua idade"))
+altura = float(int(input("Digite sua altura")))
+peso = float(int(input("Digite seu peso")))
+
+
+Pessoa = Pessoa()
+Pessoa.nome = nome
+Pessoa.idade =  idade
+Pessoa.altura = altura
+Pessoa.peso =  peso
+print(Pessoa.nome,"voce mais velho",Pessoa.envelhecer(),"anos")
+print(Pessoa.nome,"voce mais velho",Pessoa.engordar(),"kg")
+print(Pessoa.nome,"voce mais velho",Pessoa.emagrecer(),"kg")
+print(Pessoa.nome,"voce mais velho",Pessoa.crescer(),"cm")
