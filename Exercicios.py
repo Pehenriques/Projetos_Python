@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import math
 #Programa para calcular Dados Numericos 
 #Ex1
@@ -416,42 +417,42 @@ Teste o programa
 """
 
 class Pessoa:
-    nome = ''
-    idade = 0
-    peso = 0.0
-    altura = 0.0
+    nome='' 
+    idade=0
+    peso=0.0
+    altura=0.0
     
-def envelhecer(self):
-    if self.idade <= 21:
-        self.altura = self.altura + 0.5
-    self.idade= self.idade + 1
-    return self.idade
-    
-def crescer(self):
-    if self.idade <= 21:
-        self.altura = self.altura + 0.5
-    else:
+    def envelhecer(self):
+        if self.idade <= 21:
+            self.altura += 0.05
+        self.idade += 1
+        return self.idade
+
+    def engordar(self, peso):
+        self.peso += peso
+        return self.peso
+
+    def emagrecer(self, peso):
+        self.peso -= peso
+        return self.peso
+
+    def crescer(self, altura):
+        if self.idade <= 21:
+            self.altura += 0.5
         return self.altura
-        
-def engordar(self,peso):
-    self.peso += peso 
-    return self.peso
-    
-def emagrecer(self, peso):
-    self.peso -= peso
-    
-nome = input("Digite seu nome")
-idade = int(input("Digite sua idade"))
-altura = float(int(input("Digite sua altura")))
-peso = float(int(input("Digite seu peso")))
 
+nome = input("Digite seu nome: ")
+idade = int(input("Digite sua idade: "))
+altura = float(input("Digite sua altura: "))
+peso = float(input("Digite seu peso: "))
 
-Pessoa = Pessoa()
-Pessoa.nome = nome
-Pessoa.idade =  idade
-Pessoa.altura = altura
-Pessoa.peso =  peso
-print(Pessoa.nome,"voce mais velho",Pessoa.envelhecer(),"anos")
-print(Pessoa.nome,"voce mais velho",Pessoa.engordar(),"kg")
-print(Pessoa.nome,"voce mais velho",Pessoa.emagrecer(),"kg")
-print(Pessoa.nome,"voce mais velho",Pessoa.crescer(),"cm")
+pessoa = Pessoa()
+pessoa.nome = nome 
+pessoa.idade = idade
+pessoa.peso = peso
+pessoa.altura = altura
+
+print(pessoa.nome, "você mais velho, agora com", pessoa.envelhecer(), "anos.")
+print(pessoa.nome, "você mais gordo, agora com", pessoa.engordar(2.5), "kg.")
+print(pessoa.nome, "você mais magro, agora com", pessoa.emagrecer(1.0), "kg.")
+print(pessoa.nome, "você mais alto, agora com", pessoa.crescer(0.0), "m.")

@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 mensagem = "exemplo de mensagem"
 n = 25
 pi = 3.141592
@@ -143,3 +144,21 @@ if eh_par(numero):
     print("O número é par.")
 else:
     print("O número é ímpar.")
+    
+#Exemplo da Matplotlib
+plt.plot ([1,2,3,4] , [4,7,8,12])
+plt.show ()
+
+#Exemplo 2
+meses = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho']
+valores = [105235,107697,110256,109236,108859,109986]
+plt.plot (meses,valores)
+plt.show ()
+
+#Exemplo 3meses = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho']
+valores = [105235,107697,110256,109236,108859,109986]
+plt.title("faturamento no primeiro semestre de 2022")
+plt.xlabel("meses")
+plt.ylabel("Faturamento em R$")
+plt.plot (meses,valores)
+plt.show ()

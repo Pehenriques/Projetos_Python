@@ -17,6 +17,21 @@ Math.sin (45) retorna o Seno
 Import Numpy as np ( "as" e para averbrimarmos o nome )
 Numpy e uma biblioteca
 
+Import Matplotlib
+e uma biblioteca para criar gráficos, para usala voce pode instalá - la 
+import matplotlib.pyplot as plt
+#Exemplo da Matplotlib
+plt.plot ([1,2,3,4] , [4,7,8,12])
+plt.show ()
+
+1,2,3,4 = valores do eixo X
+4,7,8,12 = valores do eixo Y
+
+plt.title("faturamento no primeiro semestre de 2022")
+plt.xlabel("meses")
+plt.ylabel("Faturamento em R$")
+Forma de adicionar titulos aos campos para identificação 
+
 """
 #Operadores Aritméticos
 # Divisão inteira //
