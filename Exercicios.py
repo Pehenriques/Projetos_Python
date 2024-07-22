@@ -436,7 +436,7 @@ class Pessoa:
         self.peso -= peso
         return self.peso
 
-    def crescer(self, altura):
+    def crescer(self):
         if self.idade <= 21:
             self.altura += 0.5
         return self.altura
@@ -452,7 +452,7 @@ pessoa.idade = idade
 pessoa.peso = peso
 pessoa.altura = altura
 
-print(pessoa.nome, "você mais velho, agora com", pessoa.envelhecer(), "anos.")
-print(pessoa.nome, "você mais gordo, agora com", pessoa.engordar(2.5), "kg.")
-print(pessoa.nome, "você mais magro, agora com", pessoa.emagrecer(1.0), "kg.")
-print(pessoa.nome, "você mais alto, agora com", pessoa.crescer(0.0), "m.")
+print(pessoa.nome, "você mais velho, agora com", pessoa.envelhecer(), "\033[0;37m Anos. \033[m")
+print(pessoa.nome, "você mais gordo, agora com", pessoa.engordar(2.5), "\033[0;31m Kg. \033[m")
+print(pessoa.nome, "você mais magro, agora com", pessoa.emagrecer(1.0), "\033[0;34m Kg. \033[m")
+print(pessoa.nome, "você mais alto, agora com", pessoa.crescer(), "\033[0;32m M. \033[m")
