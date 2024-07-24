@@ -162,3 +162,12 @@ plt.xlabel("meses")
 plt.ylabel("Faturamento em R$")
 plt.plot (meses,valores)
 plt.show ()
+
+#exemplos de tupla
+lanche = ("hamburguer","suco", "pizza","pudim")
+#print(lanche)
+#for comida in lanche:
+    #print(f'Eu vou comer {comida}')
+    
+#for cont in range(0, len(lanche)):
+    #print(lanche[cont])

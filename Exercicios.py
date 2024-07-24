@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import math
+from random import randint
+from time import sleep
 #Programa para calcular Dados Numericos 
 #Ex1
 
@@ -456,3 +458,68 @@ print(pessoa.nome, "você mais velho, agora com", pessoa.envelhecer(), "\033[0;3
 print(pessoa.nome, "você mais gordo, agora com", pessoa.engordar(2.5), "\033[0;31m Kg. \033[m")
 print(pessoa.nome, "você mais magro, agora com", pessoa.emagrecer(1.0), "\033[0;34m Kg. \033[m")
 print(pessoa.nome, "você mais alto, agora com", pessoa.crescer(), "\033[0;32m M. \033[m")
+
+#Crie um programa que crie uma matriz de dimensão 3x3 e preencha com valores lidos pelo teclado
+#no final, mostre a matriz na tela, com a formatação correta.
+#a) A soma de todos os valores pares digitados.
+#b) A soma dos valores da terceira coluna.
+#c) O maior valor da segunda tabela.
+
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+soma = maior = somac = 0
+
+for linha in range(0, 3):
+    for coluna in range(0, 3):
+        #aqui ira entrar os valores [0,0] ate [2,2] sendo 3x3 a mastriz
+        matriz[linha] [coluna] = int(input(f'Digite um valor para [{linha}, {coluna}]: '))
+        # print para organização
+print('-=' * 30)
+for linha in range(0, 3):
+    for coluna in range(0, 3):
+        #aqui nossa matriz sera organiza com 5 casas dentro do [0,0] caso tenho numeros ate 5 casas e ficara alinhada (^5 e o alinhamento da matriz)
+        print(f"[{matriz[linha][coluna]:^5}]",end='')
+        if matriz[linha][coluna]% 2 == 0 :
+            soma += matriz[linha][coluna]
+    print()
+print('-=' * 30)
+print(f" A soma dos valores pares é {soma}")
+for linha in range(0, 3):
+    somac += matriz[linha][2]
+print(f"a soma dos valores da terceira coluna é {somac}")
+for coluna in range(0, 3):
+    if coluna == 0:
+        maior = matriz[1][coluna]
+    elif matriz[1][coluna] > maior:
+        maior = matriz[1][coluna]
+print(f"O maior valor da segunda linha é o {maior}")
+
+#faça um programa que ajude um jogador da mega sena a criar palpites.
+# O programa vai perguntar quantos jogos serão gerados e vai sortear 6 números
+# entre 1 a 60 para cada jogo, cadastrando tudo em uma lista composta.
+
+#from random import randint
+#from time import sleep
+
+lista = list()
+jogos = list()
+print("        JOGANDO NA MEGA CENA         ")
+quant = int(input('Quantos jogos você quer que eu sorteie ?'))
+total = 0
+while total <= quant -1:
+    cont = 0
+    while True:
+        numero = randint(1,60)
+        if numero not in lista:
+            lista.append(numero)
+            cont += 1
+        if cont >= 6:
+            break
+    lista.sort()
+    jogos.append(lista[:])
+    lista.clear()
+    total += 1
+print(f"    SORTEANDO {quant} JOGOS     ")
+for i, l in enumerate(jogos):
+    print(f'Jogo {i+1}: {l}')
+    sleep(1)
+print(f"        BOA SORTE         ")

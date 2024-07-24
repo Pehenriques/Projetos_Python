@@ -32,6 +32,15 @@ plt.xlabel("meses")
 plt.ylabel("Faturamento em R$")
 Forma de adicionar titulos aos campos para identificação 
 
+from random import randint
+
+Para randomizar, gerar numeros aleatorios
+
+from time import sleep
+
+Para colocar tempo de resposta no programa, no meu caso foi adicionado no exercio para sortear numeros para jogar na loteria, 
+a cada 1 segunda ele sorteava uma lista com 6 numeros dependendo da quantidade de jogos que pedi para gerar
+
 """
 #Operadores Aritméticos
 # Divisão inteira //
