@@ -241,3 +241,12 @@ O nome da Classe sempre começando com a letra maiúscula
         print("saldo insuficente")
 
 """
+"""
+
+Adicionar resposta de S/N dentro de uma loop 
+
+Ex: r = srt(input(" Você deseja contuniar? [S/N]" ))
+    if r in 'Nn':
+        break
+
+"""
