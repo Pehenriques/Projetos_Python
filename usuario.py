@@ -1,9 +1,9 @@
-class Usuario:
-    def __init__(self, nome, email, telefone):
+class Usuario: #Classe usuario
+    def __init__(self, nome, email, telefone): # aqui defini os atributos da classe como nome, email e telefone
         self.nome= nome
         self.email= email
         self.telefone= telefone
-
+# aqui criei as funçoes get e set para chamar dentro do CRUD
     def get_nome(self):
         return self.nome
 

@@ -1,9 +1,9 @@
-from usuario import Usuario as user
-from replit import clear
+from usuario import Usuario as user #import da classe usuario, e nomiei ela de user usando o 'as'
+from replit import clear #import para limpar 
 
-list_user = []
+list_user = [] #Criei uma lista para receber os usuarios criados
 
-def menu():
+def menu(): #Menu com as opções de funcionalidades do programa
     print("Escolha uma opção: \n")
     print("[1] - Criar Usuário")
     print("[2] - Deletar Usuário")
@@ -13,13 +13,13 @@ def menu():
     return input("Digite uma opção: ")
 
 
-def valid_option(opcao):
+def valid_option(opcao): #Função de validação das opções escolhidas 
     if opcao.isnumeric() and 0 < int(opcao) <= 5:
         return False
     return True
 
 
-def valid_menu_value():
+def valid_menu_value(): #Função de validação do menu
     valid_value = menu()
     while valid_option(valid_value):
         print("ESCOLHA UMA OPÇÃO VÁLIDA")
@@ -27,7 +27,7 @@ def valid_menu_value():
     return int(valid_value)
 
 
-def criar_usuario():
+def criar_usuario(): #Função de criar o usuario
     print("<<<<<<<<>>>>>>>>")
     nome = input("Digite o nome do Usuário: ")
     email = input("Digite o e-mail do Usuário: ")
@@ -36,18 +36,18 @@ def criar_usuario():
     return user(nome, email, telefone)
 
 
-def salva_usuario(user):
+def salva_usuario(user): #Função para salvar o usuario e adicionalo na lista
     list_user.append(user)
 
 
-def buscar_usuario(nome):
+def buscar_usuario(nome): #Função para buscar o usuario dentro da lista
     for user in list_user:
         if user.get_nome() == nome:
             return user
     return None
 
 
-def listar_usuarios():
+def listar_usuarios(): #Função para listar usuario
     if len(list_user) > 0:
         for user in list_user:
             print(f"Nome: {user.get_nome()}")
@@ -58,7 +58,7 @@ def listar_usuarios():
         print("Nenhum usuário cadastrado")
 
 
-def deletar_usuario(nome):
+def deletar_usuario(nome): #Função para deletar usuario
     user = buscar_usuario(nome)
     if user:
         list_user.remove(user)
@@ -67,14 +67,14 @@ def deletar_usuario(nome):
         print("Usuário inválido")
 
 
-def menu_atualizar():
+def menu_atualizar(): #Menu de atulização do atributo e componetes do usuario nome, email e telefone
     print("1 - Atualizar nome")
     print("2 - Atualizar email")
     print("3 - Atualizar telefone")
     print("4 - Sair\n")
 
 
-def atualizar_usuario():
+def atualizar_usuario(): #Função para atualizar usuario 
     listar_usuarios()
     atualizar = input("Digite o nome do usuário que deseja atualizar: ")
     user = buscar_usuario(atualizar)
@@ -103,7 +103,7 @@ def atualizar_usuario():
             print("Opção inválida! Tente novamente.")
 
 
-def main():
+def main(): #Função main, aqui ela chama todas as funções dentro do loop onde enquanto ele estiver em funcinamento nas conseguimos utulizar todos os case Criar, atualizar, deletar e listar usuario
     while True:
         opcao_selecionada = valid_menu_value()
         match opcao_selecionada:
