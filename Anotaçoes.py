@@ -250,3 +250,23 @@ Ex: r = srt(input(" Você deseja contuniar? [S/N]" ))
         break
 
 """
+"""
+Operador de Identidade
+
+Is
+
+exemplo
+curso = "Curso de Python"
+nome_curso = curso
+saldo, limite = 200, 200
+
+curso is nome_curso
+True
+
+curso is not nome_curso
+False
+
+curso is limite
+True
+
+"""
