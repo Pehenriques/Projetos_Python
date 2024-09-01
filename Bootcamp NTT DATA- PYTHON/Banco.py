@@ -45,6 +45,7 @@ def listar_extrato():
     total_saques = len(list_saque)
     
     print("Extrato:")
+    print("===================================")
     print(f"Total de depósitos realizados: {total_depositos}")
     for deposito in list_deposito:
         print(f"Depósito: R${deposito}")
@@ -54,6 +55,7 @@ def listar_extrato():
         print(f"Saque: R${saque}")
 
     print(f"Saldo atual: R${saldo}")
+    print("===================================")
 
 
 
