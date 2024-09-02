@@ -172,7 +172,7 @@ lanche = ("hamburguer","suco", "pizza","pudim")
 #for cont in range(0, len(lanche)):
     #print(lanche[cont])
     
-#Exemplo de definição de data e hora para diversas opções no Python
+#Exemplo de definição de data e hora no Python
 from datetime import date, datetime, time
 
 data = date(2023, 7, 10)
